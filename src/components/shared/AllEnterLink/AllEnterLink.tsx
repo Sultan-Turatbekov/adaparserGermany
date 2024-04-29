@@ -4,7 +4,7 @@ import styles from "./AllEnterLink.module.scss"
 import {useTranslation} from 'react-i18next';
 
 const AllEnterLink: FC<AllEnterLinkProps> = ({ dataJson }) => {
-  const {t,i18n}=useTranslation();
+  const {t}=useTranslation();
     return (
       <div>
         {dataJson.map((item, index) => (
