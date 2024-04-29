@@ -10,5 +10,59 @@
         "title":"ADA-Parser - parser for professionals",
         "description":"A universal parser with powerful functionality. Used by SEO companies, freelancers, SaaS services around the world",
         "button":"Application for parsing"
+    },
+    "fillbrif":{
+        "header":"Individual development of parsers",
+        "description":"We are convinced that there is no information that cannot be analyzed",
+        "briflist":{
+            "list1":"We offer customized solutions to retrieve any data from any location",
+            "list2":"We offer customized solutions to retrieve any data from any location"
+        },
+        "brifbutton":"Complete the briefing"
+    }, 
+    "topstore":{
+        "header":"Parser for products from popular online stores",
+        "description":"All parsers are regularly updated and updated. Fill your stores, track price changes, stable operation is ensured by ADA parsers"
+    },
+    "services":{
+        "block1":{
+            "header":"Individual solutions for every problem",
+            "description":"Tremendous performance, multithreading, autonomy and configuration flexibility allow A-Parser to solve almost any task of data collection from various sources",
+            "title":"We offer tailor-made parsing solutions – you receive a unique database compiled according to your requirements"
+        },
+        "block2":{
+            "header":"Why are we the best at this?",
+            "description":"Our technical specialists carry out the data analysis in strict compliance with the technical specifications. The amount of data is limited only by you (according to the technical specifications) or the resource from which the analysis is performed",
+            "title":"The key advantage for you may be that you can analyze the data yourself in the future by purchasing an A-Parser license with a preset for your task"
+        },
+        "block3":{
+            "header":"Costs for data analysis for your technical specifications",
+            "description":"The minimum order value is $50. The exact costs will be determined after reviewing your technical specifications",
+            "title":"The price includes writing a unique preset for A-Parser that can be used in the future. It is intended to test the preset and create a results file for the customer"
+        },
+        "block4":{
+            "header":"Work schedule",
+            "description":"Data analysis services allow you to get the information you need without wasting your time"
+        }
+    },
+    "pricing":{
+            "pricingheader":"Order PARSING right now",
+            "pricinglist":{
+                "list1":"Parsing all possible information",
+                "list2":"2 months update",
+                "list3":"Support"
+            },
+            "order":"Order"
+    },
+    "footer":{
+        "footerLink1":"Terms of Use",
+        "footerLink2":"Policy and confidentiality",
+        "contacts":"Contacts",
+        "service":"Our services",
+        "instagram":" Parsing Instagram",
+        "wildberris":"Parsing Wildberries",
+        "onlineShop":"Parsing online stores",
+        "pay":"Payment Methods"
     }
 }
+

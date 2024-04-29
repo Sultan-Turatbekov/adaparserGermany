@@ -10,5 +10,65 @@
         "title":"ADA-Parser - Parser für Profis",
         "description":"Ein universeller Parser mit leistungsstarker Funktionalität. Wird von SEO-Unternehmen, Freiberuflern und SaaS-Diensten auf der ganzen Welt verwendet",
         "button":"Application for parsing"
+    },
+    "fillbrif":{
+        "header":"Individuelle Entwicklung von Parsern",
+        "description":"Wir sind davon überzeugt, dass es keine Informationen gibt, die nicht analysiert werden können",
+        "briflist":{
+            "list1":"Wir bieten maßgeschneiderte Lösungen zum Abrufen beliebiger Daten von beliebigen Standorten",
+            "list2":"Wir bieten maßgeschneiderte Lösungen zum Abrufen beliebiger Daten von beliebigen Standorten"
+        },
+        "brifbutton":"Füllen Sie das Briefing aus"
+    },
+
+    "topstore":{
+        "header":"Parser für Produkte aus beliebten Online-Shops",
+        "description":"Alle Parser werden regelmäßig aktualisiert und aktualisiert. Füllen Sie Ihre Geschäfte, verfolgen Sie Preisänderungen, ein stabiler Betrieb wird durch ADA-Parser gewährleistet"
+    },
+
+    "services":{
+        "block1":{
+            "header":"Individuelle Lösungen für jedes Problem",
+            "description":"Enorme Leistung, Multithreading, Autonomie und Konfigurationsflexibilität ermöglichen es A-Parser, nahezu jede Aufgabe der Datenerfassung aus verschiedenen Quellen zu lösen",
+            "title":"Wir bieten maßgeschneiderte Parsing-Lösungen – Sie erhalten eine einzigartige, nach Ihren Anforderungen zusammengestellte Datenbank"
+        },
+        "block2":{
+            "header":"Warum sind wir darin die Besten?",
+            "description":"Unsere technischen Spezialisten führen die Datenanalyse unter strikter Einhaltung der technischen Spezifikationen durch. Die Datenmenge wird nur durch Sie (gemäß den technischen Spezifikationen) oder die Ressource, von der aus die Analyse durchgeführt wird, begrenzt",
+            "title":"Der entscheidende Vorteil für Sie besteht möglicherweise darin, dass Sie in Zukunft die Daten selbst analysieren können, indem Sie eine A-Parser-Lizenz mit einer Voreinstellung für Ihre Aufgabe erwerben"
+        },
+        "block3":{
+            "header":"Kosten für die Datenanalyse für Ihre technischen Spezifikationen",
+            "description":"Der Mindestbestellwert beträgt 50 $. Die genauen Kosten werden nach Durchsicht Ihrer technischen Spezifikationen ermittelt",
+            "title":"Im Preis ist das Schreiben einer einzigartigen Voreinstellung für A-Parser enthalten, die in Zukunft verwendet werden kann. Es ist vorgesehen, die Voreinstellung zu testen und eine Ergebnisdatei für den Kunden zu erstellen"
+        },
+        "block4":{
+            "header":"Arbeitsplan",
+            "description":"Datenanalysedienste ermöglichen es Ihnen, die benötigten Informationen zu erhalten, ohne Ihre Zeit zu verschwenden"
+        }
     }
+    ,
+    "pricing":{
+            "pricingheader":"Bestellen Sie PARSING jetzt",
+            "pricinglist":{
+                "list1":"Analysieren aller möglichen Informationen",
+                "list2":"2 Monate Update",
+                "list3":"Unterstützung"
+            },
+            "order":"Befehl"
+    }
+    ,
+    "footer":{
+        "footerLink1":"Nutzungsbedingungen",
+        "footerLink2":"Richtlinien und Datenschutz",
+        "contacts":"Kontakte",
+        "service":"Unsere Dienstleistungen",
+        "instagram":" Instagram analysieren",
+        "wildberris":"Wildbeeren analysieren",
+        "onlineShop":"Parsen von Online-Shops",
+        "pay":"Zahlungsarten"
+    }
+   
+
+
 }

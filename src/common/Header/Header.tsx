@@ -32,7 +32,7 @@ import {
                     </div>
                     <NavigationMenuList className={styles.NavigationMenuList}>
                         <NavigationMenuItem className={styles.NavigationMenuItem}>{t("header.header1")}
-                            <NavigationMenuTrigger className={styles.NavigationMenuTrigger}>d</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className={styles.NavigationMenuTrigger}></NavigationMenuTrigger>
                             <NavigationMenuContent className={styles.NavigationMenuContent}>
                                 {adaUse.map((item) => (
                                     <NavigationMenuLink >

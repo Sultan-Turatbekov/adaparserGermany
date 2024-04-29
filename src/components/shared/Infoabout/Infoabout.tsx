@@ -1,7 +1,8 @@
 import infoabout from "./infoabout.json"
 import styles from "./styles.module.scss"
-
+import { useTranslation } from "react-i18next"
 function Infoabout() {
+  const [t,i18n]=useTranslation();
   return (
     <div className={styles.schemeOfWork_info_conteiner}>
         {infoabout.map((item)=>(
