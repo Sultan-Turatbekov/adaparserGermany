@@ -7,7 +7,6 @@ import styles from './BurgerMenu.module.scss';
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -26,7 +25,7 @@ import {
   } from "@/src/components/ui/sheet"
 
 export const BurgerMenu = () => {
-    const {t,i18n}=useTranslation();
+    const {i18n}=useTranslation();
     const header = i18n.language === 'en' ? adaUseEN : adaUseDE;
     const resource = i18n.language === 'en' ? resourcesEN : resourcesDE;
     return(

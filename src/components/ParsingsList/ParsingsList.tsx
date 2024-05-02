@@ -5,7 +5,7 @@ import { AllParsingsType } from "@/src/types/allParsingsType.ts";
 import {ParsingsListItem} from "@/src/components/shared/ParsingsListItems/ParsingsListItem.tsx";
 import { useTranslation } from "react-i18next"
 export const ParsingsList = () => {
-    const { t, i18n } = useTranslation();
+    const {  i18n } = useTranslation();
     const parsinglist = i18n.language === 'en' ? parsingEN : parsingDE;
     return (
         <div>

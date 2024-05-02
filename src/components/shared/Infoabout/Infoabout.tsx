@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import infoAboutEN from './infoaboutEN.json'
 import infoaboutDE from './infoaboutDE.json';
 function Infoabout() {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
   const infoabout = i18n.language === 'en' ? infoAboutEN : infoaboutDE;
   return (
     <div className={styles.schemeOfWork_info_conteiner}>
