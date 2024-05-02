@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
-import  adaUse  from './adaUse.json';
-import  resources  from './resources.json';
+import  adaUseEN  from './adaUseEN.json';
+import  adaUseDE  from './adaUseDE.json';
+import  resourcesEN  from './resourcesEN.json';
+import  resourcesDE  from './resourcesDE.json';
 import { BurgerMenu } from "../../components/shared/burgerMenu/BurgerMenu";
 import styles from './Header.module.scss';
 
@@ -20,7 +22,10 @@ import {
     const {t,i18n}=useTranslation();
     const changeLanguage = (language:string)=>{
         i18n.changeLanguage(language);
+        localStorage.setItem('nextlocal', language)
     }
+    const header = i18n.language === 'en' ? adaUseEN : adaUseDE;
+    const resource = i18n.language === 'en' ? resourcesEN : resourcesDE;
     return (
         <header className={`${styles.full_bleed }`}>
             <div className={styles.header_container}>
@@ -32,34 +37,36 @@ import {
                     </div>
                     <NavigationMenuList className={styles.NavigationMenuList}>
                         <NavigationMenuItem className={styles.NavigationMenuItem}>{t("header.header1")}
-                            <NavigationMenuTrigger className={styles.NavigationMenuTrigger}>d</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className={styles.NavigationMenuTrigger}></NavigationMenuTrigger>
                             <NavigationMenuContent className={styles.NavigationMenuContent}>
-                                {adaUse.map((item) => (
-                                    <NavigationMenuLink >
-                                    <Link to={item.link} key={item.subtitle}>
+                            {header.map((item, index) => (
+                                <NavigationMenuLink key={index}>
+                                    <Link to={item.link}>
                                         <div className={styles.Header_link}>
                                             <img className={styles.Header_link_img} src={item.img} alt="" />
                                             <h3 className={styles.Header_link_subtitle}>{item.subtitle}</h3>
                                             <p>{item.text}</p>
                                         </div>
                                     </Link>
-                                    </NavigationMenuLink>
-                                ))}
+                                </NavigationMenuLink>
+                            ))}
+
                             </NavigationMenuContent>
                         </NavigationMenuItem>
 
                         <NavigationMenuItem>
                             <NavigationMenuTrigger className={styles.NavigationMenuTrigger}>{t("header.resource")}</NavigationMenuTrigger>
                             <NavigationMenuContent className={styles.NavigationMenuContent2}>
-                                {resources.map((item) => (
-                                    <NavigationMenuLink>
-                                    <div key={item.subtitle} className={styles.Header_link}>
+                            {resource.map((item, index) => (
+                                <NavigationMenuLink key={index}>
+                                    <div className={styles.Header_link}>
                                         <img className={styles.Header_link_img} src={item.img} alt="" />
                                         <h3 className={styles.Header_link_subtitle}>{item.subtitle}</h3>
                                         <p>{item.text}</p>
                                     </div>
-                                    </NavigationMenuLink>
-                                ))}
+                                </NavigationMenuLink>
+                            ))}
+
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                     </NavigationMenuList>
@@ -72,8 +79,8 @@ import {
                     <img src="/logoWi.svg" alt="" />
                 </div>
                 
-                <button className={styles.multiLanguage} onClick={()=>changeLanguage("en")}>En</button>
-                <button className={styles.multiLanguage} onClick={()=>changeLanguage("gr")}>Gr</button>
+                <button className={styles.multiLanguage} onClick={()=>changeLanguage("en")}>EN</button>
+                <button className={styles.multiLanguage} onClick={()=>changeLanguage("gr")}>GR</button>
                 
             </div>
             
