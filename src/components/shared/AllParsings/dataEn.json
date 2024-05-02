@@ -1,12 +1,12 @@
 [
   {
     "img": "allParsingsIco/google_ico.png",
-    "title": "Парсер поисковой выдачи Google",
+    "title": "Парсер поисковой выдачи Google english",
     "description": "Ссылки, анкоры, сниппеты, рекламные блоки, связанные ключевые слова"
   },
   {
     "img": "allParsingsIco/amazon_ico.png",
-    "title": "Парсер товаров Amazon",
+    "title": "Парсер товаров Amazon english",
     "description": "Сбор всех данных из карточки товара: название, цена, цена без скидки, продавец, рейтиг и другое"
   },
   {

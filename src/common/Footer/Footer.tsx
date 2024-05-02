@@ -36,9 +36,9 @@ export const Footer = () => {
             <div>
                 <h4 className={`text-base font-bold mb-5`}>{t("footer.service")}</h4>
                 <ul className={`flex flex-col gap-2`}>
-                    {services.map((service:string, index:number)=>(
-                        <li key={index}>{service}</li>
-                    ))}
+                    <li>{t("footer.instagram")}</li>
+                    <li>{t("footer.wildberris")}</li>
+                    <li>{t("footer.onlineShop")}</li>
                 </ul>
             </div>
             <div>

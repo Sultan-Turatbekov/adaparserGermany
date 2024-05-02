@@ -1,8 +1,10 @@
 import {Link} from "react-router-dom";
-import   adaUse   from '../../../common/Header/adaUse.json';
-import  resources  from '../../../common/Header/resources.json';
+import  adaUseEN  from '../../../common/Header/adaUseEN.json';
+import  adaUseDE  from '../../../common/Header/adaUseDE.json';
+import  resourcesEN  from '../../../common/Header/resourcesEN.json';
+import  resourcesDE  from '../../../common/Header/resourcesDE.json';
 import styles from './BurgerMenu.module.scss';
-
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,6 +26,9 @@ import {
   } from "@/src/components/ui/sheet"
 
 export const BurgerMenu = () => {
+    const {t,i18n}=useTranslation();
+    const header = i18n.language === 'en' ? adaUseEN : adaUseDE;
+    const resource = i18n.language === 'en' ? resourcesEN : resourcesDE;
     return(
         <div className={styles.BurgerMenu}>
             <Sheet>
@@ -39,7 +44,7 @@ export const BurgerMenu = () => {
                                     <NavigationMenuItem>
                                         <NavigationMenuTrigger className={styles.NavigationMenuTrigger}>Кто использует ADA-Parser</NavigationMenuTrigger>
                                         <NavigationMenuContent className={styles.NavigationMenuContent}>
-                                            {adaUse.map((item) => (
+                                            {header.map((item) => (
                                                 <Link to={item.link} key={item.subtitle}>
                                                     <div className={styles.Header__link}>
                                                         <img className={styles.Header__link_img} src={item.img} alt="" />
@@ -52,7 +57,7 @@ export const BurgerMenu = () => {
                                     <NavigationMenuItem>
                                         <NavigationMenuTrigger className={`${styles.NavigationMenuTrigger} ${styles.resurs}`}>Ресурсы</NavigationMenuTrigger>
                                         <NavigationMenuContent className={styles.NavigationMenuContent2}>
-                                            {resources.map((item) => (
+                                            {resource.map((item) => (
                                                 <Link to={item.link} key={item.subtitle}>
                                                 <div key={item.subtitle} className={styles.Header__link}>
                                                     <img className={styles.Header__link_img} src={item.img} alt="" />
