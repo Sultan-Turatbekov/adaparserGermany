@@ -24,7 +24,9 @@ export const Pricing = () => {
                             </li>
                         </ul>
                         <Button
-                            className={` mx-auto bg-white hover:bg-gray-200 vtransition-all duration-500 text-sky-600 max-w-[300px] w-full font-[600] text-sm md:text-xl lg:text-2xl`} onClick={()=>window.location.href = 'https://web.telegram.org/a/#6944523790'}>{t("pricing.order")}</Button>
+                            className={` mx-auto bg-white hover:bg-gray-200 vtransition-all duration-500 text-sky-600 max-w-[300px] w-full font-[600] text-sm md:text-xl lg:text-2xl`} onClick={()=>window.location.href = 'https://web.telegram.org/a/#6944523790'}>
+                            {t("pricing.order")}
+                        </Button>
                     </div>
                 </div>
             </div>
